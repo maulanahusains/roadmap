@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Simple time</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="app">
+      <div class="wrapper">
+        <div class="timezone">
+         <span id="tz-text"></span> 
+        </div>
+        <div class="time">
+         <span id="time-text"></span> 
+        </div>
+        <div class="date">
+         <span id="date-text"></span> 
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const timezone = document.getElementById("tz-text");
+      const currentTime = document.getElementById("time-text");
+      const currentDate = document.getElementById('date-text');
+      
+      setInterval(() => {
+        async function cuk() {
+          const anjay = await fetch('http://localhost:3030')
+          return await anjay.json()
+        }
+        const getData = cuk();
+        getData
+          .then(res => {
+            const parsed = res.data;
+            timezone.innerText = parsed.tz;
+            currentTime.innerText = parsed.currentTime;
+            currentDate.innerText = parsed.currentDate;
+            console.log(parsed)
+          })
+          .catch(err => console.log(err))
+      }, 1000);
+
+    </script>
+  </body>
+</html>

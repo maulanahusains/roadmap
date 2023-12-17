@@ -1,0 +1,31 @@
+.app {
+    width: 40%;
+    margin: 0 auto;
+    padding: 2rem;
+    border: solid 0.25rem black;
+    border-radius: 2rem;
+}
+
+.app {
+    display: flex;;
+    justify-content: flex-end;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#tz-text {
+    color: #abb3bb;
+    font-size: 2rem;
+}
+
+#time-text {
+    font-size: 6rem;
+}
+
+#date-text {
+    font-size: 2rem;
+}
