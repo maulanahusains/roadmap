@@ -6,8 +6,6 @@ Project Description
 
 ### Todo
 
-- [ ] Use a third-party library (e.g. a library for parsing CSV files)  
-- [ ] Parse JSON  
 - [ ] Use a third-party API  
 
 ### In Progress
@@ -15,6 +13,8 @@ Project Description
 
 ### Done ✓
 
+- [x] Use a third-party library (e.g. a library for parsing CSV files)  
+- [x] Parse JSON  
 - [x] Make HTTP requests  
 - [x] Parse command line arguments  
 - [x] Read and write files  
