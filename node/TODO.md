@@ -6,13 +6,14 @@ Project Description
 
 ### Todo
 
-- [ ] Use a third-party API  
 
 ### In Progress
 
+- [ ] Bulk rename files in directory  
 
 ### Done ✓
 
+- [x] Use a third-party API  
 - [x] Use a third-party library (e.g. a library for parsing CSV files)  
 - [x] Parse JSON  
 - [x] Make HTTP requests  
